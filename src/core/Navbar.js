@@ -1,20 +1,18 @@
-import React from "react";
+import React, { Fragment } from "react";
 import { Link } from "react-router-dom";
 
 const Navbar = () => {
   return (
-    <nav className="navbar navbar-expand-lg">
+    <Fragment>
       <Link className="navbar-brand text-white" to="/">
-        Home
+        <span className="fa fa-home"></span>
       </Link>
-      <ul className="navbar-nav mr-auto">
-        <li className="nav-item active">
-          <a className="nav-link text-white" href="/about">
-            about
-          </a>
-        </li>
-      </ul>
-    </nav>
+      <footer className="fixed-bottom">
+        <a className="nav-link text-white text-center " href="/about">
+          <span className="fa fa-info-square"></span> about
+        </a>
+      </footer>
+    </Fragment>
   );
 };
 export default Navbar;

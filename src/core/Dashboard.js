@@ -7,15 +7,19 @@ class Dashboard extends Component {
       <Fragment>
         <Navbar />
         <h1 className="text-center text-white font h1"> World data</h1>
-        <div className="row container mx-auto">
+        <br />
+
+        <div className="row container-fluid mx-auto">
           <div className="col-md-4">
-            <h3 className="text-info font">New Confirmed Cases</h3>
+            <h3 className="text-info font text-center">New Confirmed Cases</h3>
           </div>
           <div className="col-md-4">
-            <h3 className="text-danger font">New Death Cases</h3>
+            <h3 className="text-danger font text-center">New Death Cases</h3>
           </div>
           <div className="col-md-4">
-            <h3 className="text-success font">Recovered in last 24 hours</h3>
+            <h3 className="text-success font text-center">
+              Recovered in last 24 hours
+            </h3>
           </div>
           {/* <div className="col-md-4">
             <h3 className="text-white font">Total Confirmed Cases</h3>
@@ -28,15 +32,19 @@ class Dashboard extends Component {
           </div> */}
         </div>
 
-        <div className="row container mx-auto">
+        <div className="row container-fluid mx-auto">
           <div className="col-md-4">
-            <h3 className="text-white font">{summary.NewConfirmed}</h3>
+            <h3 className="text-white font text-center">
+              {summary.NewConfirmed}
+            </h3>
           </div>
           <div className="col-md-4">
-            <h3 className="text-white font">{summary.NewDeaths}</h3>
+            <h3 className="text-white font text-center">{summary.NewDeaths}</h3>
           </div>
           <div className="col-md-4">
-            <h3 className="text-white font">{summary.NewRecovered}</h3>
+            <h3 className="text-white font text-center">
+              {summary.NewRecovered}
+            </h3>
           </div>
           {/* <div className="col-md-4">
             <h3 className="text-white font">{summary.TotalConfirmed}</h3>
@@ -48,6 +56,13 @@ class Dashboard extends Component {
             <h3 className="text-white font">{summary.TotalRecovered}</h3>
           </div> */}
         </div>
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
         <h1 className="text-white font text-center h2">
           dated :{" "}
           <span className="text-warning">
