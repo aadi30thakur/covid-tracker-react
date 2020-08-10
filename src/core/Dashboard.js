@@ -9,34 +9,39 @@ class Dashboard extends Component {
         <Navbar />
         <h1 className="text-center text-white font h1"> World Data</h1>
         <br />
+        <div className="row">
+          <div className="row container-fluid mx-auto">
+            <div className="col-md-4">
+              <h3 className="text-info font text-center">
+                New Confirmed Cases
+              </h3>
+            </div>
+            <div className="col-md-4">
+              <h3 className="text-danger font text-center">New Death Cases</h3>
+            </div>
+            <div className="col-md-4">
+              <h3 className="text-success font text-center">
+                Recovered in last 24 hours
+              </h3>
+            </div>
+          </div>
 
-        <div className="row container-fluid mx-auto">
-          <div className="col-md-4">
-            <h3 className="text-info font text-center">New Confirmed Cases</h3>
-          </div>
-          <div className="col-md-4">
-            <h3 className="text-danger font text-center">New Death Cases</h3>
-          </div>
-          <div className="col-md-4">
-            <h3 className="text-success font text-center">
-              Recovered in last 24 hours
-            </h3>
-          </div>
-        </div>
-
-        <div className="row container-fluid mx-auto">
-          <div className="col-md-4">
-            <h3 className="text-white font text-center">
-              {summary.NewConfirmed}
-            </h3>
-          </div>
-          <div className="col-md-4">
-            <h3 className="text-white font text-center">{summary.NewDeaths}</h3>
-          </div>
-          <div className="col-md-4">
-            <h3 className="text-white font text-center">
-              {summary.NewRecovered}
-            </h3>
+          <div className="row container-fluid mx-auto">
+            <div className="col-md-4">
+              <h3 className="text-white font text-center">
+                {summary.NewConfirmed}
+              </h3>
+            </div>
+            <div className="col-md-4">
+              <h3 className="text-white font text-center">
+                {summary.NewDeaths}
+              </h3>
+            </div>
+            <div className="col-md-4">
+              <h3 className="text-white font text-center">
+                {summary.NewRecovered}
+              </h3>
+            </div>
           </div>
         </div>
         <br />
