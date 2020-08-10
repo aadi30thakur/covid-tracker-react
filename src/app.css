@@ -1,3 +1,14 @@
 body {
   background-color: #202040;
 }
+nav {
+  background-color: #b030b0;
+}
+.font {
+  font-family: cursive;
+  font-family: "Lemonada", cursive;
+}
+
+.h1 {
+  font-size: 60px;
+}
