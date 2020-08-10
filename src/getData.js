@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import Axios from "axios";
-import Base from "./core/Base";
+import Dashboard from "./core/Dashboard";
 const API = "https://api.covid19api.com/summary";
 class GetData extends Component {
   state = {
@@ -22,10 +22,10 @@ class GetData extends Component {
 
   render() {
     return (
-      <Base
+      <Dashboard
         summary={this.state.global}
         currentDate={this.state.currentDate}
-      ></Base>
+      ></Dashboard>
     );
   }
 }

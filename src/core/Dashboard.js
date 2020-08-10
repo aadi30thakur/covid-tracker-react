@@ -1,14 +1,16 @@
 import React, { Component } from "react";
+import Navbar from "./Navbar";
 
-class Base extends Component {
+class Dashboard extends Component {
   render() {
     const { summary, currentDate } = this.props;
     return (
       <div>
-        <div>{summary.NewConfirmed}</div>
+        <Navbar />
+        <div className="text-center text-white">{summary.NewConfirmed}</div>
         <div>{currentDate}</div>
       </div>
     );
   }
 }
-export default Base;
+export default Dashboard;
