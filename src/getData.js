@@ -1,6 +1,8 @@
-import React, { Component } from "react";
+import React, { Component, Fragment } from "react";
 import Axios from "axios";
 import Dashboard from "./core/Dashboard";
+import List from "./core/List";
+
 const API = "https://api.covid19api.com/summary";
 class GetData extends Component {
   state = {
@@ -13,7 +15,7 @@ class GetData extends Component {
     const res = await Axios.get(API);
     console.log(res);
     this.setState({
-      countries: res.data.Countries,
+      contries: res.data.Countries,
       global: res.data.Global,
       currentDate: res.data.Date,
       loading: false,
@@ -22,10 +24,13 @@ class GetData extends Component {
 
   render() {
     return (
-      <Dashboard
-        summary={this.state.global}
-        currentDate={this.state.currentDate}
-      ></Dashboard>
+      <Fragment>
+        <Dashboard
+          summary={this.state.global}
+          currentDate={this.state.currentDate}
+        ></Dashboard>
+        <List countries={this.state.contries} />
+      </Fragment>
     );
   }
 }
