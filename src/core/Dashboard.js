@@ -11,34 +11,36 @@ class Dashboard extends Component {
         <br />
         <div className="row">
           <div className="row container-fluid mx-auto">
-            <div className="col-md-4">
-              <h3 className="text-info font text-center">
+            <div className="col-4 ">
+              <h3 className="text-info font text-center design">
                 New Confirmed Cases
               </h3>
             </div>
-            <div className="col-md-4">
-              <h3 className="text-danger font text-center">New Death Cases</h3>
+            <div className="col-4">
+              <h3 className="text-danger font text-center design">
+                New Death Cases
+              </h3>
             </div>
-            <div className="col-md-4">
-              <h3 className="text-success font text-center">
+            <div className="col-4">
+              <h3 className="text-success font text-center design">
                 Recovered in last 24 hours
               </h3>
             </div>
           </div>
 
           <div className="row container-fluid mx-auto">
-            <div className="col-md-4">
-              <h3 className="text-white font text-center">
+            <div className="col-4">
+              <h3 className="text-white font text-center design">
                 {summary.NewConfirmed}
               </h3>
             </div>
-            <div className="col-md-4">
-              <h3 className="text-white font text-center">
+            <div className="col-4">
+              <h3 className="text-white font text-center design">
                 {summary.NewDeaths}
               </h3>
             </div>
-            <div className="col-md-4">
-              <h3 className="text-white font text-center">
+            <div className="col-4">
+              <h3 className="text-white font text-center design">
                 {summary.NewRecovered}
               </h3>
             </div>
@@ -54,24 +56,36 @@ class Dashboard extends Component {
         <br />
         <br />
         <div className="row container mx-auto">
-          <div className="col-md-4">
-            <h3 className="text-white font text-info">Total Cases</h3>
+          <div className="col-4">
+            <h3 className="text-white font text-info text-center design">
+              Total Cases
+            </h3>
           </div>
-          <div className="col-md-4">
-            <h3 className="text-white font text-danger">Total Deaths</h3>
+          <div className="col-4">
+            <h3 className="text-white font text-danger text-center  design">
+              Total Deaths
+            </h3>
           </div>
-          <div className="col-md-4">
-            <h3 className="text-white font text-success">Total Recovered</h3>
+          <div className="col-4">
+            <h3 className="text-white font text-success text-center text-center design">
+              Total Recovered
+            </h3>
           </div>
-          <div className="row container mx-auto">
-            <div className="col-md-4">
-              <h3 className="text-white font">{summary.TotalConfirmed}</h3>
+          <div className="row container-fluid mx-auto">
+            <div className="col-4">
+              <h3 className="text-white font text-center design">
+                {summary.TotalConfirmed}
+              </h3>
             </div>
-            <div className="col-md-4">
-              <h3 className="text-white font">{summary.TotalDeaths}</h3>
+            <div className="col-4">
+              <h3 className="text-white font text-center design">
+                {summary.TotalDeaths}
+              </h3>
             </div>
-            <div className="col-md-4">
-              <h3 className="text-white font">{summary.TotalRecovered}</h3>
+            <div className="col-4">
+              <h3 className="text-white font text-center design">
+                {summary.TotalRecovered}
+              </h3>
             </div>
           </div>
         </div>

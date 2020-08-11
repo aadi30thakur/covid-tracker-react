@@ -23,6 +23,13 @@ class GetData extends Component {
   }
 
   render() {
+    if (this.state.loading) {
+      return (
+        <h1 className="text-white text-center" id="loadingScreen">
+          loading...
+        </h1>
+      );
+    }
     return (
       <Fragment>
         <Dashboard
